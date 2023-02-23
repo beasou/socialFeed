@@ -24,8 +24,19 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-body, input, textarea, button {
+body, input, textarea, button, strong, span{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 1rem;
 }
+
+strong{
+    color: var(--gray-100);
+    font-weight: 800;
+}
+
+span{
+    color: var(--gray-400);
+    font-size: 14px;
+}
+
