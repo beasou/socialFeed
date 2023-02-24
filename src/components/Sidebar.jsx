@@ -1,6 +1,5 @@
 import styles from "./Sidebar.module.css";
-
-import edit from '../assets/edit.svg'
+import {PencilLine} from "phosphor-react" 
 
 export function Sidebar() {
   return (
@@ -12,14 +11,14 @@ export function Sidebar() {
         />
 
         <div className={styles.profile}>
-          <img src="https://avatars.githubusercontent.com/u/8356862?s=96&v=4"/>
+          <img src="https://github.com/beasou.png"/>
           <strong>Beatriz Souza</strong>
           <span>Fron-End</span>
         </div>
 
         <footer>
           <a href="#">
-            <img src={edit}/>
+            <PencilLine />
             Editar Perfil
           </a>
         </footer>
