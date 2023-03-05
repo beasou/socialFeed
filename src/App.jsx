@@ -1,6 +1,6 @@
 import { Header } from "./components/Header";
 import { Sidebar } from "./components/Sidebar";
-import { Post } from "./Post";
+import { Post } from "./components/Post";
 
 import styles from "./App.module.css";
 import "./global.css";
@@ -13,7 +13,7 @@ export function App() {
         <Sidebar />
 
         <main>
-          <Post author="Bea" content="teste" />
+          <Post author="Leslie Alexander" content="teste" />
         </main>
       </div>
     </>
