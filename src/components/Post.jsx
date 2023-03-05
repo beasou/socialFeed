@@ -13,24 +13,21 @@ export function Post(props) {
         <span>Publicado há 1h</span>
       </div>
       <div>
-        <p>Fala galeraa 👋</p> 
+        <p>Fala galeraa 👋</p>
         <p>
           Acabei de subir mais um projeto no meu portifa. É um projeto que fiz
           no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀
         </p>
 
         <a href="#">👉 jane.design/doctorcare</a>
-       <h4>#novoprojeto #nlw #rocketseat</h4> 
+        <h4>#novoprojeto #nlw #rocketseat</h4>
       </div>
 
       <footer>
         <label htmlFor="">Deixe seu feedback</label>
         <input type="text" />
 
-        <a href="#">
-           
-            Editar Perfil
-          </a>
+        <a href="#">Editar Perfil</a>
       </footer>
     </div>
   );
