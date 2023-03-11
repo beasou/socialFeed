@@ -25,9 +25,9 @@ export function Post(props) {
 
       <footer>
         <label htmlFor="">Deixe seu feedback</label>
-        <input type="text" />
+        <textarea type="text" />
 
-        <a href="#">Editar Perfil</a>
+        <a href="#">Publicar</a>
       </footer>
     </div>
   );

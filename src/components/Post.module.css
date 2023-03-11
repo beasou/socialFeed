@@ -48,6 +48,22 @@ h4 {
 footer {
   border-top: 1px solid var(--gray-600);
 }
+.post footer label{
+  display: block;
+  margin: 1rem 0 1rem ;
+  font-weight: 800;
+}
+.post footer textarea{
+  display: block;
+  margin: 1rem 0 1rem ;
+
+  width: 100%;
+  height: 10rem;
+  background: var(--gray-900);
+  color: var(--white);
+  border-color: var(--magenta-200);
+  border-radius: 8px;
+}
 
 .post footer a {
   background: transparent;
