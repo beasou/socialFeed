@@ -14,6 +14,7 @@ export function App() {
 
         <main>
           <Post author="Leslie Alexander" content="teste" />
+          <Post author="Leslie Alexander" content="teste" />
         </main>
       </div>
     </>

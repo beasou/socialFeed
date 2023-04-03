@@ -11,7 +11,10 @@
     --magenta-200: #A0447C;
     --magenta-700: #8B1F60;
 }
-
+:focus{
+    outline: transparent;
+    box-shadow: 0 0 0 2px var(--magenta-700) ;
+}
 *{
     margin: 0;
     padding: 0;
@@ -37,6 +40,6 @@ strong{
 
 span{
     color: var(--gray-400);
-    font-size: 14px;
+    font-size: 0.874rem;
 }
 
