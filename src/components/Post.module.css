@@ -24,6 +24,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  
 }
 
 .author img {
@@ -48,6 +49,7 @@
   line-height: 1.56;
   color: var(--gray-300);
   margin-top: 1.5rem;
+ 
 }
 
 .content p {
@@ -58,10 +60,12 @@
   font-weight: 800;
   color: var(--magenta-200);
   text-decoration: none;
+  border-radius: 2px;
 }
 
 .content a:hover {
   color: var(--white);
+  
 }
 
 .commentForm {
