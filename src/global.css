@@ -10,6 +10,8 @@
 
     --magenta-200: #A0447C;
     --magenta-700: #8B1F60;
+
+    --red-500:#F75A68
 }
 :focus{
     outline: transparent;
@@ -37,9 +39,3 @@ strong{
     color: var(--gray-100);
     font-weight: 800;
 }
-
-span{
-    color: var(--gray-400);
-    font-size: 0.874rem;
-}
-

@@ -27,6 +27,10 @@
 .profile strong {
   margin-top: 16px;
 }
+.profile span {
+  color: var(--gray-400);
+  font-size: 0.874rem;
+}
 
 .sidebar footer {
   border-top: 1px solid var(--gray-600);

@@ -39,6 +39,11 @@
   flex-direction: column;
 }
 
+.authorInfo span{
+  color: var(--gray-400);
+  font-size: 0.874rem;
+}
+
 .content {
   line-height: 1.56;
   color: var(--gray-300);
