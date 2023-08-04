@@ -23,7 +23,7 @@ const posts = [
   {
     id:2,
     author:{
-      avatarUrl: 'https://github.com/jonatasbueno',
+      avatarUrl: 'https://github.com/jonatasbueno.png',
       name: 'Jônatas Bueno do Livramento',
       role: 'Javascript Developer'
     },

@@ -6,14 +6,14 @@ export function Post(props) {
     <article className={styles.post}>
       <header>
         <div className={styles.author}>
-          <Avatar src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=80&q=80" />
+          <Avatar src={props.author.avatarUrl}/>
           <div className={styles.authorInfo}>
-            <strong>{props.author}</strong>
-            <span>UI Designer</span>
+            <strong>{props.author.name}</strong>
+            <span>{props.author.role}</span>
           </div>
         </div>
         <time title="06 de Fevereiro às 12:35" dateTime="2023-02-06 12:35:49">
-          Publicado há 1h
+          {props.publishedAt.toString()}
         </time>
       </header>
 
