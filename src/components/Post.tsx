@@ -4,11 +4,13 @@ import ptBR from "date-fns/locale/pt-BR";
 
 import { Avatar } from "./Avatar";
 import { Comment } from "./Comment";
+import {PostProps} from "../types.ts"
 
 import styles from "./Post.module.css";
 import { useState } from "react";
 
-export function Post({ author, publishedAt, content }) {
+
+export function Post({ author, publishedAt, content }: PostProps) {
   const [comments, setComments] = useState(["Muito bom, parabéns!! 👏👏"]);
 
   const [newCommentText, setNewCommentText] = useState("");
