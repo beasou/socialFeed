@@ -1,3 +1,4 @@
+import {ImgHTMLAttributes} from 'react';
 export interface Author {
   name: string;
   role: string;
@@ -20,7 +21,7 @@ export interface CommentProps{
   onDeleteComment: (comment: string) => void;
 }
 
-export interface AvatarProps{
+export interface AvatarProps extends ImgHTMLAttributes<HTMLImageElement>{
   hasBorder?: boolean; //? pois é opcional
   src: string;
   alt?: string;
