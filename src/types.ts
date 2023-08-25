@@ -14,3 +14,14 @@ export interface PostProps {
   publishedAt: Date;
   content: Content[];
 }
+
+export interface CommentProps{
+  content: string;
+  onDeleteComment: (comment: string) => void;
+}
+
+export interface AvatarProps{
+  hasBorder?: boolean; //? pois é opcional
+  src: string;
+  alt?: string;
+}
