@@ -7,8 +7,7 @@ import { Comment } from "./Comment";
 import {PostProps} from "../types.ts"
 
 import styles from "./Post.module.css";
-import { useState } from "react";
-
+import { ChangeEvent, FormEvent, InvalidEvent, useState } from "react";
 
 export function Post({ author, publishedAt, content }: PostProps) {
   const [comments, setComments] = useState(["Muito bom, parabéns!! 👏👏"]);
@@ -28,23 +27,23 @@ export function Post({ author, publishedAt, content }: PostProps) {
     addSuffix: true,
   });
 
-  function handleCreateNewComment() {
+  function handleCreateNewComment(event: FormEvent) {
     event.preventDefault();
 
     setComments([...comments, newCommentText]);
 
     setNewCommentText("");
   }
-  function handleNewCommentChange() {
+  function handleNewCommentChange(event: ChangeEvent<HTMLTextAreaElement>) {
     event.target.setCustomValidity("");
     setNewCommentText(event.target.value);
   }
 
-  function handleNewCommentInvalid() {
+  function handleNewCommentInvalid(event: InvalidEvent<HTMLTextAreaElement>) {
     event.target.setCustomValidity("Esse campo é obrigatório!");
   }
 
-  function deleteComment(commentToDelete) {
+  function deleteComment(commentToDelete: string) {
     const commentsWithoutDeletedOne = comments.filter((comment) => {
       return comment !== commentToDelete;
     });
@@ -89,7 +88,6 @@ export function Post({ author, publishedAt, content }: PostProps) {
       <form onSubmit={handleCreateNewComment} className={styles.commentForm}>
         <strong>Deixe seu feedback</strong>
         <textarea
-          type="text"
           placeholder="Escreva um comentário"
           value={newCommentText}
           name="comment"
