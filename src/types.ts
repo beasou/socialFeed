@@ -10,10 +10,15 @@ export interface Content {
   content:string;
 }
 
-export interface PostProps {
+export interface PostType{
+  id: number;
   author: Author;
   publishedAt: Date;
   content: Content[];
+}
+
+export interface PostProps {
+  post: PostType;
 }
 
 export interface CommentProps{

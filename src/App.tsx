@@ -4,8 +4,9 @@ import { Post } from "./components/Post";
 
 import styles from "./App.module.css";
 import "./global.css";
+import { PostType } from "./types";
 
-const posts = [
+const posts: PostType[] = [
   {
     id:1,
     author:{
@@ -48,9 +49,10 @@ export function App() {
             return (
               <Post
                 key={post.id}
-                author={post.author}
+                post={post}
+                /*author={post.author}
                 content={post.content}
-                publishedAt={post.publishedAt}
+                publishedAt={post.publishedAt}*/
               />
             )
           })}
