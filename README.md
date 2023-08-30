@@ -2,6 +2,8 @@
 Progeto de uma pagina de rede social
 ![socialFeed](https://github.com/beasou/socialFeed/assets/8356862/9b600347-28fb-4d88-994d-1cfa0a2c4fb8)
 
+Responsivo:
+![socialFeedresponsive](https://github.com/beasou/socialFeed/assets/8356862/1080edb7-9043-48d9-9402-508262b08e7c)
 
 # React + TypeScript + Vite
 
