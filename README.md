@@ -1,5 +1,6 @@
 # Social Feed
 Progeto de uma pagina de rede social
+![socialFeed](https://github.com/beasou/socialFeed/assets/8356862/9b600347-28fb-4d88-994d-1cfa0a2c4fb8)
 
 
 # React + TypeScript + Vite
